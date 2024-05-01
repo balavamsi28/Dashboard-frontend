@@ -39,15 +39,10 @@ testem.log
 
 # System files
 .DS_Store
-Thumbs.db
-tsconfig.spec.json
-*.json
-.editorconfig
 .gitattributes
 README.md
-server.ts
-src/favicon.ico
+.editorconfig
+.vscode/extensions.json
+.vscode/launch.json
+.vscode/tasks.json
 src/assets/.gitkeep
-src/main.server.ts
-src/main.ts
-src/styles.css
