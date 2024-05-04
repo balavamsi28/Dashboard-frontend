@@ -10,8 +10,8 @@ describe('FilterSearchComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [FilterSearchComponent]
     })
-    .compileComponents();
-    
+        .compileComponents();
+
     fixture = TestBed.createComponent(FilterSearchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
