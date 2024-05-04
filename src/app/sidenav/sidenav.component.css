@@ -1,0 +1,33 @@
+/* sidenav.component.css */
+
+.sidenav {
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f0f0f0;
+  padding-top: 60px; /* Adjust according to your header's height */
+  z-index: 999; /* Ensure side-nav is behind the header */
+  border-right: 1px solid #ccc; /* Add a border on the right side */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidenav li {
+  padding: 10px 20px;
+}
+
+.sidenav a {
+  text-decoration: none;
+  color: #333; /* Link color */
+  font-size: 18px;
+}
+
+.sidenav a:hover {
+  background-color: #ddd; /* Highlight on hover */
+}

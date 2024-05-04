@@ -1,0 +1,19 @@
+/* visualization.component.css */
+
+.visualization-container {
+  display: flex;
+  flex-direction: column; /* Display children in a column layout */
+  margin-left: 220px; /* Adjust the margin to leave space for the side-nav component */
+}
+
+.row {
+  display: flex;
+  flex-direction: row; /* Display children in a row layout */
+}
+
+.component-container {
+  flex: 1; /* Each component container occupies equal width */
+  border: 1px solid #ccc; /* Add border with 1px width and solid color */
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+  margin: 10px; /* Add margin for spacing between components */
+}
