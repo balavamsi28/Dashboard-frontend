@@ -21,9 +21,6 @@ import { VisualizationComponent } from './visualization/visualization.component'
 import { SwotPieChartComponent } from './swot-pie-chart/swot-pie-chart.component';
 import { Component2Component } from './component-2/component-2.component';
 import { Component3Component } from './component-3/component-3.component';
-import { Component4Component } from './component-4/component-4.component';
-import { Component5Component } from './component-5/component-5.component';
-import { Component6Component } from './component-6/component-6.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
@@ -38,9 +35,6 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     SwotPieChartComponent,
     Component2Component,
     Component3Component,
-    Component4Component,
-    Component5Component,
-    Component6Component // Declare UserTableComponent here
   ],
   imports: [
     BrowserModule,
