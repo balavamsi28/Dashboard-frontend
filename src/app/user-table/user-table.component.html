@@ -1,16 +1,14 @@
-<!-- user-table.component.html -->
 <div class="dashboard">
   <div class="header">
     <h2>Data Dashboard</h2>
   </div>
 
   <div class="filters">
-
     <label for="country">Country</label>
-    <input type="text"[(ngModel)]="filters.country" id="country">
+    <input type="text" [(ngModel)]="filters.country" id="country">
 
     <label for="sector">Sector</label>
-    <input type="text"[(ngModel)]="filters.sector" id="sector">
+    <input type="text" [(ngModel)]="filters.sector" id="sector">
 
     <label for="topic">Topic:</label>
     <input type="text" [(ngModel)]="filters.topic" id="topic">
@@ -24,28 +22,28 @@
     <table>
       <thead>
       <tr>
-        <th>City</th>
+        <th>ID</th>
         <th>Country</th>
         <th>Intensity</th>
         <th>Sector</th>
         <th>Topic</th>
         <th>Insight</th>
-        <th>SWOT</th>
         <!-- Add more table headers for other fields -->
       </tr>
       </thead>
       <tbody>
-      <tr *ngFor="let item of data">
-        <td>{{ item.city }}</td>
+      <tr *ngFor="let item of pagedData">
+        <td>{{ item.id }}</td>
         <td>{{ item.country }}</td>
         <td>{{ item.intensity }}</td>
         <td>{{ item.sector }}</td>
         <td>{{ item.topic }}</td>
         <td>{{ item.insight }}</td>
-        <td>{{ item.swot }}</td>
         <!-- Add more table cells for other fields -->
       </tr>
       </tbody>
     </table>
   </div>
+
+  <mat-paginator [length]="data.length" [pageSize]="pageSize" [pageSizeOptions]="[5, 10, 20]" (page)="onPageChange($event)"></mat-paginator>
 </div>
