@@ -1,29 +1,20 @@
-<!-- visualization.component.html -->
-
 <div class="visualization-container">
-  <!-- First Row -->
+
   <div class="row">
     <div *ngIf="swotData" class="component-container">
-      <!-- First Section: SwotPieChartComponent -->
       <app-swot-pie-chart [swotData]="swotData"></app-swot-pie-chart>
     </div>
-
-    <div class="component-container">
-      <!-- Second Component -->
-      <app-component-3></app-component-3>
-      <!-- Include your second component here -->
-    </div>
-
-
   </div>
 
-  <!-- Second Row -->
   <div class="row">
     <div class="component-container">
-      <!-- Fourth Component -->
       <app-component-2></app-component-2>
-      <!-- Include your fourth component here -->
     </div>
+  </div>
 
+  <div class="row">
+    <div class="component-container">
+      <app-component-3></app-component-3>
+    </div>
   </div>
 </div>
