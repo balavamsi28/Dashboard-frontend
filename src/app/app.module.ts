@@ -22,6 +22,7 @@ import { SwotPieChartComponent } from './swot-pie-chart/swot-pie-chart.component
 import { Component2Component } from './component-2/component-2.component';
 import { Component3Component } from './component-3/component-3.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import {BaseChartDirective} from "ng2-charts";
 
 @NgModule({
   declarations: [
@@ -49,7 +50,9 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     MatSidenavContainer,
     MatNavList,
     MatListItem,
-    MatPaginatorModule
+    MatPaginatorModule,
+    BaseChartDirective,
+
 
     // If needed
   ],

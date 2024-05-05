@@ -2,18 +2,33 @@
 
 .visualization-container {
   display: flex;
-  flex-direction: column; /* Display children in a column layout */
-  margin-left: 220px; /* Adjust the margin to leave space for the side-nav component */
+  flex-direction: column;
+  max-width: 60%; /* Limit the width of the container to 60% of the page */
+  margin: 40px auto; /* Add margin to center the container and create some breathing room */
+  padding: 20px; /* Add padding to create some space between the container and its contents */
+  border: 1px solid #ccc; /* Add a border to create a nice outline */
+  border-radius: 10px; /* Add a border radius to create rounded corners */
+}
+
+.side-nav {
+  width: 30%; /* Set the width of the side navigation to 30% of the container */
+  background-color: #f0f0f0;
+  padding: 10px;
 }
 
 .row {
-  display: flex;
-  flex-direction: row; /* Display children in a row layout */
+  margin-bottom: 20px;
 }
 
 .component-container {
-  flex: 1; /* Each component container occupies equal width */
-  border: 1px solid #ccc; /* Add border with 1px width and solid color */
-  border-radius: 5px; /* Optional: Add border radius for rounded corners */
-  margin: 10px; /* Add margin for spacing between components */
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px; /* Add some margin to create space between components */
+}
+
+.component {
+  width: 100%;
+  height: 100%;
 }
